@@ -23,7 +23,7 @@ public class GeminiService {
     }
 
     public GeminiResponse askGeminiWithResponse(String text) {
-        String response = askGemini("Is the following statement true or false? Answer with one word." + text);
+        String response = askGemini("Answer with TRUE, FALSE or INCONCLUSIVE:" + text);
         if (response.toLowerCase().contains("true")) {
             return GeminiResponse.TRUE;
         } else if (response.toLowerCase().contains("false")) {
