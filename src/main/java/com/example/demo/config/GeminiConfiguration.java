@@ -5,8 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class GeminiConfiguration
-{
+public class GeminiConfiguration {
 
     @Bean
     public Client geminiClient() {
